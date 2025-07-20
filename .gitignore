@@ -1,1 +1,77 @@
-bin/ 
+## === Build Results ===
+bin/
+obj/
+out/
+[Bb]uild/
+[Ll]og/
+
+## === User-Specific Files ===
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+*.pdb
+*.cache
+*.dbmdl
+*.bak
+*.orig
+*.tmp
+*.log
+
+## === Visual Studio Folder ===
+.vs/
+.vscode/
+
+## === NuGet ===
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## === IIS Express ===
+*.vspscc
+*.vssscc
+*.dbmdl
+iisexpress/
+
+## === Rider / JetBrains ===
+.idea/
+
+## === Test Results ===
+TestResults/
+*.trx
+
+## === Publish Output ===
+publish/
+*.Publish.xml
+*.deploy.cmd
+*.deploy-readme.txt
+
+## === Others ===
+*.DS_Store
+Thumbs.db
+Desktop.ini
+
+## === Local Settings ===
+appsettings.*.json
+secrets.json
+
+## === Entity Framework Migrations Cache ===
+Migrations/
+
+## === ReSharper ===
+_ReSharper*/
+*.DotSettings.user
+
+## === Node / Webpack (if used) ===
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*

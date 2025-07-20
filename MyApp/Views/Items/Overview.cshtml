@@ -1,0 +1,15 @@
+﻿@model MyApp.Models.Item
+@{
+    bool isLoggedin = true;
+}
+
+<p>
+    @if(isLoggedin)
+    {
+        <p>Welcome Back</p>
+    }
+    else
+    {
+        <p>Please Log in</p>
+    }
+</p>

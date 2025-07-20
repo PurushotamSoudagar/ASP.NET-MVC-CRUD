@@ -1,0 +1,31 @@
+﻿@model List<MyApp.Models.Item>
+@{
+    ViewData["Title"] = "Index";
+}
+<h3>Index</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>price</th>
+            <th>Serial Code</th>
+            <th class="btn btn-primary">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.SerialNumber?.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Price.ToString("N2")$</td>
+                <td>@item.SerialNumber?.Name</td>
+                <td>
+                    <a asp-action="Edit" class ="btn btn-warning" asp-route-Id="@item.Id">Edit</a>
+                    <a asp-action="Delete" class="btn btn-danger"  asp-route-Id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
