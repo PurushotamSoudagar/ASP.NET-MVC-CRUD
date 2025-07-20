@@ -60,9 +60,6 @@ Desktop.ini
 appsettings.*.json
 secrets.json
 
-## === Entity Framework Migrations Cache ===
-Migrations/
-
 ## === ReSharper ===
 _ReSharper*/
 *.DotSettings.user
